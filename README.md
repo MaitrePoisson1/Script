@@ -37,3 +37,6 @@ ALTER TABLE `jobs`
 
 ### Configurer les logs du menu
 * Etape 1 : Aller dans "shared\server_config.lua" puis de la ligne 20 à 109, modifier le webhooks par rapport à ceux de votre discord puis modifier de la ligne 117 à 120 les informations des logs.
+
+# Pour tout autre demande 
+venez sur le discord : https://discord.gg/MDRG2PQVVb
