@@ -10,6 +10,25 @@ Un menu admin 100% configurable !
 * Etape 4 : Aller dans "shared\client_config.lua" puis de la ligne 300 à 338, modifier les commandes par rapport à celle de votre serveur.
 * Etape 5 : Aller dans "shared\client_config.lua" puis à la ligne 215, modifier en true si vous utilisez un système d'arme en item.
 
+Mettre le sql : 
+```lua
+CREATE TABLE `sanction_list` (
+  `target_id` varchar(255) NOT NULL,
+  `staff_name` varchar(255) NOT NULL,
+  `target_name` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `raison` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+ALTER TABLE `jobs`
+  ADD PRIMARY KEY (`job2`);
+
+ALTER TABLE `jobs`
+  MODIFY `job2` tinyint(1) NOT NULL DEFAULT 0;
+  ```
+
 ### Configurer la bannière du menu
 * Etape 1 : Aller dans "stream\commonmenu.ytd" puis modifier la bannière "interaction_bgd" ou sinon remplacer le fichier et metter bien le nom de votre bannière à la ligne 17 dans "shared\client_config.lua".
 
